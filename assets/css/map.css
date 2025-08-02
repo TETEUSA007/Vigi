@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    font-family: romantica;
+    scroll-behavior: smooth;
+  }
+  
+  @font-face {
+    font-family: augustos;
+    src: url(../fontes/AUGUSTUS.TTF);
+  }
+  
+  @font-face {
+    font-family: romantica;
+    src: url(../fontes/Romanica.ttf);
+  }
+  
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: rgb(33, 33, 33);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background: rgb(153, 153, 153);
+  }
+
+  /* BACKGROUD-MAP */
+
+  
+
+  /* FIM BACKGROUD-MAP */
+
+  /* map backgorund */
+
+  iframe{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 0;
+  }
+
+  /* Fim map background */
+
+  /* MENU */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100vh;
+  background-image: url(../img/img3-Photoroom.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: width 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.navbar.show {
+  width: 20vw;
+  border-right: 1.5px solid #5e5e5e;
+  transition: 1s;
+}
+
+.navbar-content {
+  display: none;
+}
+
+.navbar.show {
+  width: 20vw;
+}
+
+.navbar.show .navbar-content {
+  display: block;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgb(46, 46, 46);
+  border-radius: 50%;
+  border: 3px solid rgb(115, 115, 115);
+  color: rgb(115, 115, 115);
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toggle-button i {
+  font-size: 40px;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  margin-bottom: 20px;
+}
+
+.navbar a {
+  color: rgb(138, 138, 138);
+  text-decoration: none;
+}
+
+/* FIM MENU */
+
+/* SLOGAN */
+
+.slogan{
+  width: 200px;
+  white-space: nowrap; 
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 40px;
+  z-index: 1;
+}
+
+.slogan h1{
+  text-align: center;
+  color: rgba(193, 193, 193, 0.677);
+  background-image: url(../img/img3-Photoroom.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2px;
+  border: 2px solid rgb(138, 138, 138);
+  border-radius: 30px;
+}
+
+/* FIM SLOGAN */
+
+/* LOGO */
+
+.logo-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgb(46, 46, 46);
+  border-radius: 50%;
+  border: 3px solid rgb(115, 115, 115);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 20px;
+}
+
+/* FIMLOGO */
+
+/* responsividade para iphone 5 e SE 2016 */
+
+@media screen and (max-width: 320px){
+  .toggle-button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .toggle-button i {
+    font-size: 30px;
+  }
+
+  .slogan{
+    width: 200px;
+    margin-top: 30px;
+  }
+  
+  .slogan h1{
+    padding: 0px;
+    font-size: 30px;
+  }
+
+  .logo-container {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .logo {
+    width: 15px;
+  }
+}

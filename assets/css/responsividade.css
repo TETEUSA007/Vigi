@@ -1,0 +1,215 @@
+@media screen and (max-width: 884px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin-top: none;
+      }
+
+      .container .text{
+        margin-top: 50px;
+      }
+
+      /* Noticas */
+
+      #carrossel .tranding-slider {
+        width: 100%;
+      }
+
+      /* about us */
+
+      .about .container{
+        width: 100%;
+      }
+
+        .box p{
+          font-size: 30px;
+      }
+
+      .box img{
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+
+        /* FOOTER */
+
+  footer header{
+    justify-content: center;
+  }
+
+  footer header img{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: none;
+  }
+
+  .container .text{
+    width: 80%;
+  }
+
+  .container .services img{
+    width: 90%;
+    height: 200px;
+  }
+
+  /* about */
+
+  .about .container{
+    width: 100%;
+  }
+
+  .box{
+    flex-direction: column;
+  }
+
+    .box p{
+      font-size: 13px;
+      margin-left: 5px;
+      margin-right: 5px;
+  }
+
+  .box img{
+   margin-top: 50px;
+  }
+
+  /* FOOTER */
+
+footer header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+footer header img{
+  display: none;
+}
+
+footer header nav ul{
+  display: flex;
+}
+
+footer header nav ul li{
+  margin: 10px;
+}
+
+footer header nav ul li a{
+  display: flex;
+  justify-content: center;
+}
+}
+
+@media screen and (max-width: 320px){
+  /* about */
+    .box p{
+      font-size: 10px;
+      margin-left: 10px;
+      margin-right: 10px;
+  }
+
+  footer header img{
+    width: 80px;
+  }
+}
+
+/* apple watch */
+
+@media screen and (max-width: 163px){
+
+  /* MENU */
+
+.navbar {
+  display: none;
+}
+/* FIM MENU */
+
+/* WELCOME */
+.welcome img{
+  width: 100px;
+}
+
+.welcome h1{
+  font-size: 10px;
+}
+
+.container .services{
+  display: none;
+}
+
+.container .text{
+  display: none;
+}
+
+/* Noticas */
+#carrossel {
+  margin-top: -150px;
+}
+
+#carrossel .oqea{
+  display: none;
+}
+
+.tranding-slide {
+  width: 140px;
+  height: 190px;
+  border-radius: 10px;
+}
+
+.tranding-slide .act-img img{
+  width: 140px;
+  height: 190px;
+  border-radius: 10px;
+}
+
+.noticia .act-tag {
+  width: 40px;
+  top: 5px;
+  right: 5px;
+}
+
+.noticia .acontecimento{
+  font-size: 20px;
+}
+
+.noticia .localizacao{
+  margin-left: -30px;
+  font-size: 10px;
+}
+
+.noticia .especificacoes {
+  left: 10px;
+  font-size: 12px;
+}
+
+/* FOOTER */
+
+footer header{
+  flex-direction: column;
+  margin-top: -10px;
+}
+
+footer header img{
+  width: 50px;
+}
+
+footer header nav ul li a{
+  display: none;
+}
+
+footer p{
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 5px;
+  padding: 3px;
+  font-size: 8px;
+}
+}
